@@ -6,3 +6,4 @@ int main() {
     cout << max(a, b);
     return 0;
 }
+
