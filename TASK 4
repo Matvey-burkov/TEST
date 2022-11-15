@@ -1,0 +1,18 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+
+    ifstream file("text.txt");
+    int size_buffer = 1000000, x = 0;
+    char buffer[size_buffer];
+
+        while(!file.eof()){
+        file.getline(buffer,size_buffer,'\n');
+        x++;
+    }
+    cout<<x;
+    return 0;
+}
